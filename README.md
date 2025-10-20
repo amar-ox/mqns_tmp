@@ -11,6 +11,8 @@ This software is developed at the [Smart Connected Systems Division](https://www
 This project is part of an ongoing research effort to evaluate the quantum networking approaches presented in our survey:
 🔗 [Entanglement Routing in Quantum Networks: A Comprehensive Survey](https://ieeexplore.ieee.org/document/10882978).
 
+An initial documentation can be found [here](https://mqns.readthedocs.io/en/latest/).
+
 ## Current Features
 
 ### Routing Model
@@ -132,15 +134,11 @@ pip install -e .
 
 ---
 
-## Example: Three-Node Simulation
+## Examples
 
-The example `examples/3_nodes_thruput.py` simulates a linear three-node quantum network (`S → R → D`) to evaluate how memory coherence time affects end-to-end entanglement throughput.
+The `examples` folder contains several ready-to-run simulations. Feel free to explore each script individually.
 
-It demonstrates:
-
-* Entanglement generation over lossy fiber links (approximating Barrett-Kok protocol)
-* Swapping at an intermediate node
-* Statistical analysis over multiple runs with variable memory coherence
+The `3_nodes_thruput.py` example simulates a linear three-node quantum network (`S → R → D`) to evaluate how memory coherence time affects end-to-end entanglement throughput.
 
 Run the example with:
 
@@ -150,8 +148,6 @@ python 3_nodes_thruput.py > output.log
 ```
 
 The script outputs a plot of the entanglement rate versus memory coherence time, and log messages in the `.log` file.
-
-More examples and configuration options will be added as the simulator evolves.
 
 ---
 
